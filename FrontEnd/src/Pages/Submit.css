@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(227, 213, 192, 0.569);
+}
+
+.nav {
+  background-color: #2e3f68;
+  width: 100%;
+  height: 8vw;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.clglogo {
+  height: 100%;
+  display: flex;
+}
+
+.clglogo img {
+  height: 90%;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.c-name {
+  margin-right: 20px;
+  width: 50%;
+  color: white;
+  padding: 8px 7px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c-name h2 {
+  margin: 5px 0px;
+  font-size: 2vw;
+}
+
+.c-name p {
+  font-size: 1.2vw;
+}
+
+/* nav button */
+.feedback-link {
+  width: 10vw;
+  height: 3vw;
+  border: 1px solid white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all ease-in-out 0.2s;
+  font-size: 1.2vw;
+}
+
+.feedback-link:hover {
+  background-color: white;
+  box-shadow: 0 0 2px 2px grey;
+}
+
+a:hover {
+  color: black;
+  font-weight: 500;
+}
+
+/* ----main heading  */
+.mainHead {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #A7B1CB;
+  font-size: 2.5vw;
+}
+
+/* Middle div */
+.mdiv {
+  padding: 40px 40px;
+}
+
+.upper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 38vw;
+}
+
+/*----> start input box */
+/* main div input box*/
+
+.first {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: 90%;
+  justify-content: center;
+  padding: 10px 40px;
+  margin-left: 4%;
+  box-shadow: 0 0 10px 1px black;
+  background-color: #EBEAF3;
+  border-radius: 28px;
+}
+
+.first h3 {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.first input {
+  margin: 5px 0px;
+  padding: 5px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 70%;
+  outline: none;
+  font-size: 1vw;
+}
+
+.first input:focus {
+  border-bottom: 2px solid #2e3f68;
+}
+
+.first label {
+  margin-top: 8px;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+.first select {
+  font-size: 1vw;
+  margin-top: 7px;
+  height: 2.4vw;
+  width: 70%;
+  background: none;
+  border-radius: 18px;
+  padding: 0px 4px;
+}
+
+.u-pic {
+  width: 45%;
+}
+
+.u-pic img {
+  height: 100%;
+  width: 100%;
+  border-radius: 28px;
+}
+
+/* Bottom level div */
+.botom {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.tableHead {
+  font-size: 1.5vw;
+  width: 100%;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #443D78;
+}
+
+.b-left {
+  height: 500px;
+  width: 44%;
+  border-right: 1px solid black;
+  height: auto;
+  margin-bottom: 3px;
+}
+
+.b-left ul {
+  margin-top: 3.3vw;
+  padding: 0px 3px;
+}
+
+.b-left ul li {
+  list-style: numeric;
+  margin-left: 29px;
+  font-size: 1.3vw;
+  margin-top: 15px;
+}
+
+.b-right {
+  width: 56%;
+}
+
+.sem {
+  width: 100%;
+  display: flex;
+  background-color: #443D78;
+  color: white;
+  height: 50px;
+  align-items: center;
+  padding: 5px 5px;
+  justify-content: center;
+}
+
+.sem select {
+  font-size: 1vw;
+  width: 20%;
+  height: 1.9vw;
+  margin-left: 10px;
+  border-radius: 18px;
+  padding: 3px;
+}
+
+.sem label {
+  font-size: 1.7vw;
+  font-weight: 600;
+}
+
+.sem select option {
+  background-color: white;
+}
+
+.tab {
+  padding: 1px 5px;
+  overflow-x: auto;
+}
+
+.tab table td {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.tab table td select {
+  font-size: 1vw;
+  background: none;
+  border-radius: 8px;
+  padding: 9px 7px;
+  margin: 2px 1px;
+}
+
+.tab table th {
+  font-size: 1vw;
+  border: 1px solid black;
+  padding: 2px 2px;
+  margin: 10px;
+  height: 3vw;
+}
+
+.tab table {
+  margin-top: 10px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.btn button {
+  width: 15%;
+  height: 3.6vw;
+  border-radius: 28px;
+  background: #443D78;
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.btn button:hover {
+  cursor: pointer;
+  background: #A7B1CB;
+  color: black;
+  font-weight: 600;
+}
+
+/* Footer */
+/* Footer */
+footer{
+  height: 8vw;
+  color: white;
+  background-color: #443D78;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin-top: -25px;
+}
+.names{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: 1px solid #A7B1CB; */
+  overflow: hidden;
+
+}
+.names h2{
+  width: 12vw;
+  margin-right: 13px;
+  font-size: 1.3vw;
+  font-weight: 400;
+  border-right: 2px solid white;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.ourNames{
+  text-align: center;
+  margin-left: 10px;
+  font-size: 1.6vw;
+  font-weight: 100;
+  font-family:cursive;
+  /* border: 1px solid white; */
+  transform: translateY(-110%);
+  animation: animateH2 3s linear 0s infinite;
+}
+
+
+
+/* Define animation for h2 elements */
+@keyframes animateH2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-90%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-75%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-25%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(20%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(40%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(60%);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(80%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+}

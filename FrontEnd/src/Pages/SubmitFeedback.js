@@ -97,7 +97,8 @@ const App = () => {
         }
 
         try {
-            const response = await axios.post('http://192.168.99.226:5000/submit-feedback', formData);
+            // const response = await axios.post('http://192.168.99.226:5000/submit-feedback', formData);
+            const response = await axios.post('http://localhost:5000/submit-feedback', formData);
 
             const handleClearForm = () => {
                 setFormData({

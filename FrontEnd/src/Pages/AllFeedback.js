@@ -41,7 +41,8 @@ const AllFeedback = () => {
 
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://192.168.99.226:5000/get-all-feedback');
+                // const response = await axios.get('http://192.168.99.226:5000/get-all-feedback');
+                const response = await axios.get('http://localhost:5000/get-all-feedback');
                 setAllFeedback(response.data);
 
                 // Extract unique options for dropdowns

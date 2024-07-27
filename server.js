@@ -6,7 +6,7 @@ const cors = require('cors');
 require("dotenv").config();
 const app = express();
 const PORT =  5000;
-const HOST= process.env.HOST;
+// const HOST= process.env.HOST;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -75,7 +75,7 @@ app.post('/submit-feedback', async (req, res) => {
     });
 
     const savedFeedback = await newFeedback.save();
-    console.log('Feedback saved:', savedFeedback);
+    // console.log('Feedback saved:', savedFeedback);
     res.json({ message: 'Data received and saved successfully.' });
   } catch (error) {
     if (error.code === 11000 && error.keyPattern && error.keyPattern.enrollment) {
@@ -98,8 +98,8 @@ app.get('/get-all-feedback', async (req, res) => {
 });
 
 // allowed username and password
-const allowedUsername = 'adminaccess';
-const allowedPassword = 'admin@svce'; // replace with a secure password 
+const allowedUsername = 'admin';
+const allowedPassword = 'admin'; // replace with a secure password 
 
 // Login Endpoint
 app.post('/login', async (req, res) => {
@@ -120,10 +120,10 @@ app.post('/login', async (req, res) => {
 
 
 
-app.listen(PORT,HOST, () => {
-  console.log(`Server is running on port http://${HOST}:${PORT}`);
-});
-
-// app.listen(PORT, () => {
-//   console.log(`Server is running on port at${PORT}`);
+// app.listen(PORT,HOST, () => {
+//   console.log(`Server is running on port http://${HOST}:${PORT}`);
 // });
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port at${PORT}`);
+});

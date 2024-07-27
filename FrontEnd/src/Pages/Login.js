@@ -12,7 +12,8 @@ const Login = () => {
     e.preventDefault(); // Prevent the default form submission
 
     try {
-      const response = await axios.post('http://192.168.99.226:5000/login', { username, password });
+      // const response = await axios.post('http://192.168.99.226:5000/login', { username, password });
+      const response = await axios.post('http://localhost:5000/login', { username, password });
       console.log(response.data.message);
       // Handle successful login
       navigate(`/all-feedback/Qj0tlV5FbnTuQObT5I6vVs4szJEpshx1`);
